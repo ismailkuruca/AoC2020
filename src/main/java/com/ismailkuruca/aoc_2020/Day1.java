@@ -15,6 +15,7 @@ public class Day1 {
 
 
         part1(input);
+        part2(input);
     }
 
     private static void part1(List<Integer> input) {
@@ -28,6 +29,15 @@ public class Day1 {
     }
 
     private static void part2(List<Integer> input) {
+        for (Integer integer : input) {
+            for (Integer integer1 : input) {
+                for (Integer integer2 : input) {
+                    if (integer + integer1 + integer2 == 2020) {
+                        System.out.println(integer * integer1 * integer2);
+                    }
+                }
+            }
+        }
     }
 
 }
