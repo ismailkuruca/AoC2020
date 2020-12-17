@@ -10,8 +10,12 @@ public class Day5 {
     public static void main(String[] args) {
         final List<String> input = FileUtil.readFile("day5");
 
-        part1(input);
-        part2(input);
+        try {
+
+            part1(input);
+            part2(input);
+        } catch (Exception e) {
+        }
     }
 
     private static void part1(List<String> input) {
